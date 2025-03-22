@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.11.35222.181
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookifyWeb", "BookifyWeb\BookifyWeb.csproj", "{15A0657E-60CF-444B-8779-96E99DBFB883}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookifyWeb", "BookifyWeb\BookifyWeb.csproj", "{15A0657E-60CF-444B-8779-96E99DBFB883}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookifyWebRazor_Temp", "BookifyWebRazor_Temp\BookifyWebRazor_Temp.csproj", "{113CBEDE-09A0-48E5-B870-A58381C8F8EE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{15A0657E-60CF-444B-8779-96E99DBFB883}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15A0657E-60CF-444B-8779-96E99DBFB883}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15A0657E-60CF-444B-8779-96E99DBFB883}.Release|Any CPU.Build.0 = Release|Any CPU
+		{113CBEDE-09A0-48E5-B870-A58381C8F8EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{113CBEDE-09A0-48E5-B870-A58381C8F8EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{113CBEDE-09A0-48E5-B870-A58381C8F8EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{113CBEDE-09A0-48E5-B870-A58381C8F8EE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
