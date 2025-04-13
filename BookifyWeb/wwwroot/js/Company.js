@@ -1,0 +1,35 @@
+﻿$(document).ready(function () {
+    loadDataTable();
+});
+
+function loadDataTable() {
+    dataTable = $('#tblData').DataTable({
+        "ajax": {
+            url: '/admin/company/getall'
+        },
+        "columns": [
+            { data: 'name', "width": "25%" },
+            { data: 'streetAddress', "width": "15%" },
+            { data: 'city', "width": "10%" },
+            { data: 'state', "width": "15%" },
+            { data: 'phoneNumber', "width": "10%" },
+            {
+                data: 'id',
+                render: function (data) {
+                    return ` 
+                        <div class="w-75 btn-group" role="group">
+                            <a href="/admin/Company/Upsert?id=${data}" class="btn btn-primary mx-2">
+                                <i class="bi bi-pencil-square"></i> Edit
+                            </a>
+                            <a href="/admin/Company/Delete?id=${data}" class="btn btn-danger mx-2">
+                                <i class="bi bi-trash"></i> Delete
+                            </a>
+                        </div>
+                    `;
+                },
+                "width": "25%"
+            }
+        ]
+    });
+}
+
