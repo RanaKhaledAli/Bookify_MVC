@@ -41,11 +41,15 @@ function Delete(url) {
     }).then((result) => {
         if (result.isConfirmed) {
             $.ajax({
-                url: url,   // The URL for the DELETE request
-                type: 'DELETE',  // Ensure the method is DELETE
+                url: url,
+                type: 'DELETE',
                 success: function (data) {
-                    dataTable.ajax.reload();  // Reload the data in the table
-                    toastr.success(data.message);  // Show success notification
+                    if (data.success) {
+                        dataTable.ajax.reload();
+                        toastr.success(data.message);
+                    } else {
+                        toastr.error(data.message);
+                    }
                 },
                 error: function (xhr, status, error) {
                     toastr.error('An error occurred while deleting the record.');

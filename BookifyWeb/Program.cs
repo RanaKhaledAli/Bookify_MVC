@@ -41,6 +41,7 @@ builder.Services.AddRazorPages();
 // Register the IunitOfWork with its concrete implementation
 builder.Services.AddScoped<IUnitOfWork, UnitOfWork>();
 builder.Services.AddScoped<IEmailSender, EmailSender>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
